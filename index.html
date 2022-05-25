@@ -5,26 +5,85 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>eGameShop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles.css'>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-end">
-          <li class="page-item disabled">
-            <a class="page-link">Previous</a>
+  <!--header-->
+  <header class="container-fluid bg-danger d-flex justify-content-center">
+    <p class="text-light mb-0 p-2 fs-6">Tel: +54 9 351 341-8561</p>
+
+  </header>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+        <span class="text-danger fs-5 fw-bold">eGameShop</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#">Next</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tienda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </li>
         </ul>
-      </nav>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-      
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="./img/slider1.png" class="d-block w-100" alt="slide1">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./img/slider2.jpg" class="d-block w-100" alt="slide2">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./img/slider3.png" class="d-block w-100" alt="slide3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--footer-->
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+      <div class="mx-auto">
+        <ul>
+          <a class="navbar-brand" href="#">Fixed bottom</a>
+          <a class="navbar-brand" href="#">Fixed bottom</a>
+        </ul>
+        <p class="text-light">© eGameShop | 2022 All rights reserved</p>
+      </div>
+    </nav> 
+
 </body>
 </html>
