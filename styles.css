@@ -11963,10 +11963,14 @@ body {
   overflow-x: hidden;
 }
 
+#navbar-head {
+  background-color: #000;
+}
+
 #menu li > a {
   font-size: 18px;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
 }
 
 #menu form > button {
@@ -11975,6 +11979,15 @@ body {
 }
 
 .carousel-inner {
-  max-height: 39rem;
+  max-height: 34rem;
+}
+
+#texto-footer {
+  font-size: small;
+  padding-top: 10px;
+}
+
+#navfoot {
+  position: relative;
 }
 /*# sourceMappingURL=styles.css.map */
