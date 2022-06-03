@@ -7,19 +7,25 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./styles.css'>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3ac3391d4b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!--header-->
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------HEADER-------------------------------------------------------------------------------------------------->
+
   <header class="container-fluid bg-danger d-flex justify-content-center" id="header">
     <p class="text-light mb-0 p-2 fs-6">Tel: +54 9 351 341-8561</p>
   </header>
   
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------NAVBAR-HEADER-------------------------------------------------------------------------------------------------->
+
   <nav class="navbar navbar-expand-lg navbar-dark p-3" id="navbar-head">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">
-        <img src="./img/logo.png" alt="logo" width="30" height="30" class="d-inline-flex align-text-top" id="logo-head">
-        <span class="fs-5 fw-bold text-danger" id="texto-head">eGameShop</span>
+        <img src="./img/logo.png" alt="logo" width="25" height="25" class="d-inline-flex align-text-top" id="logo-head">
+        <span class="fs-5 text-danger" id="texto-head">eGameShop</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,13 +53,16 @@
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
+          <button class="btn btn-outline-danger" type="submit">Buscar</button>
         </form>
       </div>
     </div>
   </nav>
 
-  <div id="carouselExampleControls" class="carousel slide border" data-bs-ride="carousel">
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------SLIDER-INICIO-------------------------------------------------------------------------------------------------->
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="3000">
         <img src="./img/slider1.png" class="d-block w-100" alt="slide1">
@@ -67,6 +76,9 @@
       <div class="carousel-item" data-bs-interval="3000">
         <img src="./img/slider4.jpg" class="d-block w-100" alt="slide4">
       </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./img/slider5.jpg" class="d-block w-100" alt="slide5">
+      </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -78,35 +90,77 @@
     </button>
   </div>
 
-  <!--Intro-->
-  <section class="w-50 mx-auto text-center pt-5 pb-5" id="intro">
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------INTRO-------------------------------------------------------------------------------------------------->
+
+  <section class="w-50 mx-auto text-center pt-4 pb-5" id="intro">
     <h1 class="p-3 fs-2 border-top border-3">Tu <span class="text-danger">Tienda Online</span> para encontrar tus juegos favoritos al mejor precio.</h1>
-    <p class="p-3 fs-4"><span class="text-danger">eGameShop</span> es la mejor opcion de la actualidad.</p>
+    <p class="p-3 fs-4 border-bottom border-3" ><span class="text-danger">eGameShop</span> es la mejor opcion de la actualidad.</p>
   </section>
 
-  <!--Trending-->
-  <section class="text-start ps-5 pt-2 bg-light bg-gradient">
-    <h3 class="pt-2"><span class="p-2 bg-dark bg-gradient text-danger fw-bold">Juegos del Momento</span></h3>
-    <p class="fs-5"><span class="text-dark">Los lanzamientos mas recientes del mercado al alcance de tu mano.</span></p>
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------TRENDING-GAMES-------------------------------------------------------------------------------------------------->
+
+  <section class="text-start ps-5 pt-2 bg-light bg-gradient p-5" id="trending-items">
+    <h3 class="pt-2"><span class="text-danger fw-bold">Juegos del Momento</span></h3>
+    <p class="fs-6 fw-bold"><span class="text-dark">Los lanzamientos mas recientes del mercado al alcance de tu mano.</span></p>
+    <div class="container">
+      <main>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-5 g-3 mt-3">
+                <div class="col">
+                    <div class="card shadow-sm bg-dark">
+                        <img src="./img/borderlands.jpg" width="240">
+                        <div class="card-body">
+                            <h5 class="card-title text-light">Borderlands 3</h5>
+                            <p class="card-text text-secondary fw-bold">$ 3865.00</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-secondary">Detalles</a>
+                                </div>
+                                <a href="#" class="btn btn-danger">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
   </section>
-  
 
 
-  <!--footer-->
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------------------->
+
   <footer>
-    <nav class="navbar navbar-dark bg-dark" id="navfoot">
-      <div class="mx-auto" id="navbarSupportedContent">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
-          </li>
-          <li>
-            <a class="nav-link" href="./paginas/nosotros.html">Sobre Nosotros</a>
-          </li>
-        </ul>
-        <p class="text-light" id="texto-footer">© eGameShop 2022 | All rights reserved</p>
+    <div class="container_footer">
+      <div class="box_footer">
+        <div class="logo">
+          <img src="./img/logo2.png" alt="">
+        </div>
+        <div class="terms">
+          <p class="fs-18 fw-normal text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
       </div>
-    </nav> 
+      <div class="box_footer">
+        <h2 class="text-light">Redes Sociales</h2>
+        <a href="" class="text-secondary"> <i class="fa-brands fa-whatsapp-square"></i> Whatsapp</a>
+        <a href="" class="text-secondary"> <i class="fa-brands fa-instagram-square"></i> Instagram</a>
+        <a href="" class="text-secondary"> <i class="fa-brands fa-facebook-square"></i> Facebook</a>
+      </div>
+      <div class="box_footer">
+        <h2 class="text-light">Contacto</h2>
+        <a href="./paginas/contacto.html"  class="text-secondary"> <i class="fa-solid fa-envelope-open-text"></i> Formulario</a>
+      </div>
+      <div class="box_footer">
+        <h2 class="text-light">Conocenos</h2>
+        <a href="./paginas/nosotros.html" class="text-secondary"> <i class="fa-solid fa-people-group"></i> Nosotros</a>
+      </div>
+    </div>
+    <div class="box_copyrights">
+      <hr>
+      <p>© <b>eGameShop</b> 2022  |  All Rights Reserved</p>
+    </div>
   </footer>
 
 </body>

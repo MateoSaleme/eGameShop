@@ -8,6 +8,12 @@ body{
 
 #navbar-head{
     background-color: #000;
+    div{
+        #texto-head{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top: 10px;
+        }
+    }
 }
 
 #menu li > a{
@@ -25,11 +31,62 @@ body{
     max-height: 34rem;
 }
 
-#texto-footer{
-    font-size: small;
-    padding-top: 10px;
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(./img/wave3.svg);
+    background-size: cover;
+    position: absolute;
+    .container_footer{
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 500px;
+    }
+    .box_footer{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+        h2{
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        a{
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover{
+            opacity: 0.8;
+        }
+        a .fa-brands{
+            font-size: 20px;
+        }
+        .terms{
+            max-width: 350px;
+            margin-top: 20px;
+        }
+        .logo{
+            img{
+                width: 200px;
+            }
+        }
+    }
+    .box_copyrights{
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+        p{
+            margin-top: 20px;
+            color: #ffffff;
+        }
+        hr{
+            color: #ffffff;
+        }
+    }
 }
 
-#navfoot{
-    position: relative;
-}
